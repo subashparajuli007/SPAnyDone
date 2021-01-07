@@ -1,0 +1,6 @@
+framework module Pods_SPAnyDone_SPAnyDoneTests {
+  umbrella header "Pods-SPAnyDone-SPAnyDoneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

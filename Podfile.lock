@@ -1,0 +1,24 @@
+PODS:
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaMQTT (1.2.5):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - GoogleWebRTC (1.1.31999)
+
+DEPENDENCIES:
+  - CocoaMQTT
+  - GoogleWebRTC (~> 1.1)
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - CocoaMQTT
+    - GoogleWebRTC
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+
+PODFILE CHECKSUM: 4f02286701e736b010ded15c46a32bf3036bc77c
+
+COCOAPODS: 1.10.0
