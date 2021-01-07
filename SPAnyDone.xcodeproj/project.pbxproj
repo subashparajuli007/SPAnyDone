@@ -18,6 +18,7 @@
 		E72289BD25A6C7D4003D2C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72289BB25A6C7D4003D2C11 /* Main.storyboard */; };
 		E72289BF25A6C7D7003D2C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72289BE25A6C7D7003D2C11 /* Assets.xcassets */; };
 		E72289C225A6C7D7003D2C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72289C025A6C7D7003D2C11 /* LaunchScreen.storyboard */; };
+		E72289CB25A6CD49003D2C11 /* SPAnyDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72289CA25A6CD49003D2C11 /* SPAnyDone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E72289BE25A6C7D7003D2C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72289C125A6C7D7003D2C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72289C325A6C7D7003D2C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72289CA25A6CD49003D2C11 /* SPAnyDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAnyDone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				E722898F25A6C3F9003D2C11 /* SPAnyDone.h */,
 				E722899025A6C3F9003D2C11 /* Info.plist */,
+				E72289CA25A6CD49003D2C11 /* SPAnyDone.swift */,
 			);
 			path = SPAnyDone;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				TargetAttributes = {
 					E722898B25A6C3F9003D2C11 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					E722899425A6C3F9003D2C11 = {
 						CreatedOnToolsVersion = 12.3;
@@ -361,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72289CB25A6CD49003D2C11 /* SPAnyDone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,14 +543,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D47EAD331656D82744604471 /* Pods-SPAnyDone.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SPAnyDone/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,6 +562,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ledzep.SPAnyDone;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -563,14 +572,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C85C53A1BF2EBC8DB9D2D313 /* Pods-SPAnyDone.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SPAnyDone/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F5944995DBD951AA486F58B /* Pods-SPAnyDone-SPAnyDoneTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				INFOPLIST_FILE = SPAnyDoneTests/Info.plist;
@@ -607,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D284185F3A74D7132A1C2DB /* Pods-SPAnyDone-SPAnyDoneTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				INFOPLIST_FILE = SPAnyDoneTests/Info.plist;
@@ -630,6 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				INFOPLIST_FILE = SPAnyDoneExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7M232DRB6B;
 				INFOPLIST_FILE = SPAnyDoneExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
