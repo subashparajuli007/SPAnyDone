@@ -9,6 +9,8 @@ import Foundation
 
 public final class SPAnyDone {
     
+    public init() {}
+    
     public func doubleNumber(integer: Int) -> Int {
         return 2*integer
     }
