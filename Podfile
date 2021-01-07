@@ -12,6 +12,10 @@ target 'SPAnyDone' do
   post_install do |installer|
     installer.pods_project.build_configurations.each do |config|
       config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      #the following lines need to be added to podspec file because of arm64 issue
+      
+      #   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+      #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
     end
   end
   
